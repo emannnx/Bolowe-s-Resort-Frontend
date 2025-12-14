@@ -1,0 +1,36 @@
+nav {
+  @apply flex fixed mintablet:top-0 minMd:px-16 px-4 py-2 w-full mintablet:h-20 mintablet:justify-between mintablet:items-center bg-[#141414] bg-opacity-20    mintablet:bg-[#141414] mintablet:bg-opacity-20 
+       h-auto  flex-col mintablet:flex-row items-start justify-start  z-[999];
+}
+
+.logo-ham {
+  @apply w-full mintablet:w-auto flex justify-between items-center;
+}
+.logo {
+  @apply w-[100px] sm:w-[60px] sm:h-auto;
+}
+.hambuger {
+  @apply text-2xl mintablet:hidden inline-block;
+}
+.open {
+  @apply w-7;
+}
+.close {
+  @apply w-7;
+}
+.nav-links {
+  @apply flex mintablet:space-x-5 mintablet:space-y-0  mintablet:divide-y-0  mintablet:items-center mintablet:text-white flex-col mintablet:flex-row items-start space-x-0  sm:text-xl md:pt-5 md:text-gray-800;
+}
+.nav-link-custom {
+  @apply  text-black mintablet:text-white no-underline mintablet:uppercase;
+}
+.nav-link-custom .active {
+  @apply font-bold text-[#A020F0] text-opacity-100;
+}
+#nav-cta {
+  @apply bg-black text-white hover:bg-green-500 hover:text-white rounded-md py-2 px-3 sm:px-0 ;
+}
+
+.menu-links {
+  @apply text-black no-underline hover:font-bold 
+}

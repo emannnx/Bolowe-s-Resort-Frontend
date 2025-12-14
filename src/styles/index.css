@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  overflow-x: hidden !important;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'poppins';
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: 'playfair';
+  src: url(../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: 'croissant';
+  src: url(../assets/fonts/Croissant_One/CroissantOne-Regular.ttf);
+}
+@layer components {
+  .page {
+    @apply w-full ;
+  }
+  .hero {
+    @apply w-full h-[500px] bg-no-repeat bg-cover bg-center bg-black bg-opacity-20 flex justify-start items-end text-7xl  uppercase text-white text-center font-croissant sm:text-2xl sm:pt-5;
+  }
+
+  .hero p  {
+    @apply  text-xl minMd:text-[29px] leading-[35px] font-sans px-10 pb-10
+  } 
+  .features {
+    @apply container mx-auto p-20 flex flex-col justify-center sm:px-5;
+  }
+  .feature-img {
+    @apply w-full h-auto;
+  }
+  .feature-text {
+    @apply my-5;
+  }
+  .feature-text h1 {
+    @apply text-3xl py-0 mb-5 font-playfair;
+  }
+  .feature-text p {
+    @apply p-0 m-0;
+  }
+  .feature-imgs {
+    @apply flex justify-between space-x-5 sm:space-x-0 sm:flex-col sm:space-y-5;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

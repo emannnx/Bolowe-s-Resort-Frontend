@@ -1,0 +1,8 @@
+/* @tailwind base;
+@tailwind components;
+
+@layer base {
+  .honeymoon {
+    @apply bg-cover text-center h-[30rem] sm:px-10;
+  }
+} */

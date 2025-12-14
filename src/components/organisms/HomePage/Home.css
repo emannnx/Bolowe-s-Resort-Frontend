@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@layer components {
+  .home {
+    @apply  !max-w-full !overflow-hidden    bg-cover   minMd:min-h-[480px] mintablet:h-[100vh] text-white h-[500px];
+  }
+  .heading {
+    @apply text-[25px] leading-[29px] sm:text-xl w-[77.5rem] sm:w-full text-start sm:mb-3;
+  }
+  .hero-div {
+    @apply flex flex-col justify-center  h-full pb-20 font-croissant sm:mt-5;
+  }
+  .btn-custom {
+    @apply text-white py-4  px-14 w-fit border-white border-solid border-[1px] rounded-lg mt-10 sm:mt-3 bg-inherit cursor-pointer bg-black;
+  }
+  .desc {
+    @apply mt-[50px]  mintablet:grid mintablet:grid-cols-12 mintablet:gap-x-10 mintablet:items-center w-full px-[15px] minMd:px-[60px] minLg:px-[100px]  justify-center items-start;
+  }
+  .desc-image {
+    @apply col-span-4  mintablet:col-span-6;
+  }
+  .desc-image img {
+    @apply w-full mx-auto  minMd:w-[550px] h-[350px] minMd:h-[452px];
+  }
+  .desc-text {
+    @apply col-span-1 mintablet:col-span-6 sm:text-center;
+  }
+  .who {
+    @apply text-[24px] leading-[29px] font-extralight mt-4;
+  }
+  .offer {
+    @apply flex justify-center overflow-visible sm:block;
+  }
+  .offer .img {
+    @apply h-[550px] w-auto  bg-cover relative flex items-end p-8;
+  }
+  .view {
+    @apply absolute bottom-0 right-[-3.9rem] px-14 sm:px-4  py-5 bg-black text-white text-sm flex justify-center items-center rounded-lg gap-x-3 z-20 sm:right-0 sm:mb-0 sm:mr-2;
+  }
+  .parlor {
+    @apply pb-10 bg-cover  gap-x-10 my-24 sm:flex-col sm:gap-x-0 sm:gap-y-4 sm:my-4 sm:h-auto;
+  }
+}
+
+.heading {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.desc-image img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* .view {
+  box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.2);
+} */

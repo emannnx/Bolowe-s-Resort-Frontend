@@ -1,0 +1,13 @@
+.aboutCarousel {
+  .slick-slide {
+    margin: 0 2px; /* Adjust the left and right margin as per your requirements */
+    @media (min-width:"992px") {
+        margin: 0 10px;
+    }
+  }
+  
+  .slick-list {
+    margin: 0 -10px; /* Adjust the negative left and right margin to counteract slide margin */
+
+}
+}

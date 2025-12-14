@@ -1,0 +1,33 @@
+.sort {
+    width: 248px;
+    height: 56px;
+    .sort-btn {
+        .dropdown-icon-down {
+            rotate:-180deg;
+        } 
+        .dropdown-icon-up {
+            rotate:0deg;
+        } 
+    }
+
+    .dropdown {
+        position: absolute;
+        box-shadow: 4px 4px 32px rgba(77, 77, 77, 0.25);
+        top: 108%
+        //display: none;
+
+    }
+
+    .dropdown > * + * {
+        margin-top: 17px;
+    }
+
+    .dropdown li {
+        cursor: pointer;
+        width: 100%;
+    }
+
+    // .sort-btn:focus + .dropdown {
+    //     display: flex;
+    // } 
+}
