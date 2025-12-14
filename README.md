@@ -11,7 +11,6 @@ A modern React-based frontend application for Bolowe's Resort, built with TypeSc
 - **Attractions**: Showcase of resort attractions
 - **Payment Integration**: Integrated payment processing
 
-
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
